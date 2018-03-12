@@ -8,6 +8,9 @@ do
 done | sort -z -k 1 -n | sed -z 's/^[0-9]*\t//' | \
 while IFS= read -r -d '' name
 do
-	NUMBER=$i rename 's/$/.$ENV{NUMBER}/' $name
-	((i++))
+	if [ -x $name ]
+	then
+		NUMBER=$i rename 's/$/.$ENV{NUMBER}/' $name
+		((i++))
+	fi
 done
