@@ -5,4 +5,5 @@ find test/ -maxdepth 2 \( -iregex '.*\.jpg' -o -iregex '.*\.gif' \) -print | \
 		do
 			realpath "$filename"
 		done | \
+		sed 'y/\//\\/' | \
 		tail -n 5
