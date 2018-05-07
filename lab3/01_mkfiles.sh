@@ -1,5 +1,7 @@
 #!/bin/sh
 
+mkdir -p 'test/img/test/depth'
+
 cd test/
 
 touch 'A'
@@ -8,8 +10,6 @@ touch 'A~~'
 touch '~B'
 touch 'C~'
 touch 'D 1~'
-
-mkdir -p 'img/test/depth'
 
 dd if=/dev/urandom of='img/1.jpg' bs=8 count=32 status=none
 dd if=/dev/urandom of='img/2.gif' bs=8 count=7 status=none
