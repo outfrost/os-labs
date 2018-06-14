@@ -1,0 +1,1 @@
+Dla wyjścia komendy history policzyć średnią ilość argumentów, które przyjmuje każda z zapisanych komend z osobna.
