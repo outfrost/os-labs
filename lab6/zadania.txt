@@ -1,0 +1,2 @@
+1. Stworzyć w wybranym miejscu ($1) X ($3) plików o treści z innego pliku ($2)
+2. Usunąć pliki z $1, kopiując pliki *.txt do $2
